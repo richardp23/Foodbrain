@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodbrain</title>
+    <!-- FontAwesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link id="theme" rel="stylesheet" type="text/css" href="css/styleLight.css" />
+    <link id="favicon" rel="shortcut icon" href="images/logoLightMode.png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="javascript/stylesheet.js" defer></script>
+  </head>
+  <body id="home-page">
+    <!-- Navigation Menu-->
+    <header>
+      <nav>
+        <div class="navbar">
+          <!--<div class="logo">
+            <div class="compname">
+              <a href="index.html">Foodbrain</a>
+            </div>
+            <img src="images/logoLightMode.png" alt="Foodbrain Logo"/>
+          </div> -->
+          <div class="logo">
+            <img
+              src="images/logoTheme.png"
+              alt="Foodbrain Logo"
+              style="width: 50px"
+              id="brain"
+            />
+            <a href="index.html">Foodbrain</a>
+          </div>
+
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mealPlanner.html">Meal Planner</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <div class="cancel-btn"><i class="fas fa-times"></i></div>
+          </ul>
+          <div class="icons">
+            <button type="button" id="login"><i class="fas fa-sign-in-alt"></i></button>
+            <button type="button" id="darkmode"><i class="fas fa-moon"></i></button>
+          </div>
+        </div>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+      </nav>
+    </header>
+
+    <!-- Home Page -->
+    <main>
+      <div id="blankrefer"></div>
+      <section class="home" id="home">
+        <div class="home-content">
+          <div class="text">
+            <div class="text-one">Eat Healthy</div>
+          </div>
+          <div class="button"><button>Get Started!</button></div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <div class="text">
+        <span> &copy;2022 Foodbrain. All rights reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>

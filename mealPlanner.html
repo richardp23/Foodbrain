@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodbrain</title>
+    <!-- FontAwesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link id="theme" rel="stylesheet" type="text/css" href="css/styleLight.css" />
+    <link
+      id="calenderLayout"
+      rel="stylesheet"
+      type="text/css"
+      href="css/mealPlanner.css"
+    />
+    <link id="favicon" rel="shortcut icon" href="images/logoLightMode.png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="javascript/stylesheet.js" defer></script>
+    <script src="javascript/mealPlanner.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Menu-->
+    <header>
+      <nav>
+        <div class="navbar">
+          <!-- <div class= "navlogo"><img src="images/logoTransparent.png" alt="Foodbrain Logo"/></div> -->
+          <!-- The Logo Name is temporary cuz its real hard to size the freaking logo image in a nav bar -->
+          <div class="logo">
+            <img src="images/logoTheme.png" alt="Foodbrain Logo" style="width: 50px;" id="brain"/>
+            <a href="index.html">Foodbrain</a>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mealPlanner.html">Meal Planner</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <div class="cancel-btn"><i class="fas fa-times"></i></div>
+          </ul>
+          <div class="icons">
+            <button type="button" id="login"><i class="fas fa-sign-in-alt"></i></button>
+            <button type="button" id="darkmode"><i class="fas fa-moon"></i></button>
+          </div>
+        </div>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+      </nav>
+      <div id="blankrefer"></div>
+    </header>
+    <main>
+      <div class="planningPanel">
+        <h1>Plan your meals:</h1>
+        <br /><br />
+        <h2>Enter the following information:</h2>
+        <br />
+        <form>
+          <label>First name:</label>
+          <input type="text" id="firstName"><br><br>
+          <label>Last name:</label>
+          <input type="text" id="lastName"><br><br>
+          <label>Biological Sex:</label>
+          <select name="Sex" id="userSex">
+            <option></option>
+            <option value="male">M</option>
+            <option value="female">F</option>
+          </select><br><br>
+          <label>Height (in):</label>
+          <input type="text" id="height"><br><br>
+          <label>Weight (lb):</label>
+          <input type="text" id="weight"><br><br>
+          <label>Favorite food:</label>
+          <input type="text" id="userFavorite"><br><br>
+          <label>Diet:</label>
+          <select name="Diet" id="dietType"><br><br>
+            <option></option>
+            <option value="loseWeight">Weight loss</option>
+            <option value="gainWeight">Bulking</option>
+          </select><br><br>
+          <button id="recipeSearch">Submit</button>
+
+        </form>
+        <br />
+        <div class="recipeModal">
+          <div class="modalContent">
+            <span class="close">&times;</span>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br>
+
+    </main>
+
+    <!-- Footer Section  -->
+    <footer>
+      <div class="text">
+        <span> &copy;2022 Foodbrain. All rights reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>
