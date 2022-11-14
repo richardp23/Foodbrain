@@ -47,6 +47,7 @@ function recipePrint(day, givenRecipe) {
   let recipeLink = document.createElement("a");
   recipeLink.href = givenRecipe.url;
   recipeLink.innerHTML = givenRecipe.url;
+  recipeLink.target = "_blank";
   recipeDescription.innerHTML = givenRecipe.label + "<br /> URL: ";
   recipeDescription.appendChild(recipeLink);
   recipeContainer.appendChild(recipeDescription);
