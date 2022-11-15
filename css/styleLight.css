@@ -59,7 +59,6 @@ nav .navbar .menu li {
 }
 nav .navbar .menu li a {
   font-size: 18px;
-  font-size: 500;
   color: rgb(82, 182, 154);
   transition: all 0.3s ease;
 }
@@ -108,8 +107,12 @@ nav .menu-btn,
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+body {
   font-family: "Ubuntu", "sans-serif";
 }
+
 .home .home-content {
   height: 100%;
   width: 90%;
@@ -128,7 +131,6 @@ nav .menu-btn,
 .home .button {
   margin-right: 545px;
   text-align: right;
-  padding-right: 300;
 }
 .home .button button {
   outline: none;
@@ -155,7 +157,7 @@ nav .menu-btn {
 footer {
   text-align: center;
   background: rgb(96, 211, 148);
-  padding-left: 15px 0;
+  padding-left: 15px;
 }
 footer .text span{
   color: #303036;
