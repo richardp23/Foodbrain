@@ -89,7 +89,6 @@ h2.names{
 }
 
 .teamphoto {
-  width:100%;
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -118,7 +117,7 @@ footer {
   bottom: 0;
   text-align: center;
   background: rgb(96, 211, 148);
-  padding-left: 15px 0;
+  padding-left: 15px;
 }
 footer .text span{
   color: #303036;
